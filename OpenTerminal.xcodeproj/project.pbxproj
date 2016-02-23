@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD41952F1C7CAA6900330823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD41952E1C7CAA6900330823 /* AppDelegate.swift */; };
+		DD4195311C7CAA6900330823 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4195301C7CAA6900330823 /* ViewController.swift */; };
+		DD4195331C7CAA6900330823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4195321C7CAA6900330823 /* Assets.xcassets */; };
+		DD4195361C7CAA6900330823 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4195341C7CAA6900330823 /* Main.storyboard */; };
+		DD4195411C7CAA6900330823 /* OpenTerminalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4195401C7CAA6900330823 /* OpenTerminalTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD41953D1C7CAA6900330823 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD4195231C7CAA6900330823 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD41952A1C7CAA6900330823;
+			remoteInfo = OpenTerminal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD41952B1C7CAA6900330823 /* OpenTerminal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenTerminal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD41952E1C7CAA6900330823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD4195301C7CAA6900330823 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD4195321C7CAA6900330823 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD4195351C7CAA6900330823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD4195371C7CAA6900330823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD41953C1C7CAA6900330823 /* OpenTerminalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenTerminalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD4195401C7CAA6900330823 /* OpenTerminalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTerminalTests.swift; sourceTree = "<group>"; };
+		DD4195421C7CAA6900330823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD4195281C7CAA6900330823 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD4195391C7CAA6900330823 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD4195221C7CAA6900330823 = {
+			isa = PBXGroup;
+			children = (
+				DD41952D1C7CAA6900330823 /* OpenTerminal */,
+				DD41953F1C7CAA6900330823 /* OpenTerminalTests */,
+				DD41952C1C7CAA6900330823 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD41952C1C7CAA6900330823 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD41952B1C7CAA6900330823 /* OpenTerminal.app */,
+				DD41953C1C7CAA6900330823 /* OpenTerminalTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD41952D1C7CAA6900330823 /* OpenTerminal */ = {
+			isa = PBXGroup;
+			children = (
+				DD41952E1C7CAA6900330823 /* AppDelegate.swift */,
+				DD4195301C7CAA6900330823 /* ViewController.swift */,
+				DD4195321C7CAA6900330823 /* Assets.xcassets */,
+				DD4195341C7CAA6900330823 /* Main.storyboard */,
+				DD4195371C7CAA6900330823 /* Info.plist */,
+			);
+			path = OpenTerminal;
+			sourceTree = "<group>";
+		};
+		DD41953F1C7CAA6900330823 /* OpenTerminalTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD4195401C7CAA6900330823 /* OpenTerminalTests.swift */,
+				DD4195421C7CAA6900330823 /* Info.plist */,
+			);
+			path = OpenTerminalTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD41952A1C7CAA6900330823 /* OpenTerminal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD4195451C7CAA6900330823 /* Build configuration list for PBXNativeTarget "OpenTerminal" */;
+			buildPhases = (
+				DD4195271C7CAA6900330823 /* Sources */,
+				DD4195281C7CAA6900330823 /* Frameworks */,
+				DD4195291C7CAA6900330823 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenTerminal;
+			productName = OpenTerminal;
+			productReference = DD41952B1C7CAA6900330823 /* OpenTerminal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD41953B1C7CAA6900330823 /* OpenTerminalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD4195481C7CAA6900330823 /* Build configuration list for PBXNativeTarget "OpenTerminalTests" */;
+			buildPhases = (
+				DD4195381C7CAA6900330823 /* Sources */,
+				DD4195391C7CAA6900330823 /* Frameworks */,
+				DD41953A1C7CAA6900330823 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD41953E1C7CAA6900330823 /* PBXTargetDependency */,
+			);
+			name = OpenTerminalTests;
+			productName = OpenTerminalTests;
+			productReference = DD41953C1C7CAA6900330823 /* OpenTerminalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD4195231C7CAA6900330823 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = QP;
+				TargetAttributes = {
+					DD41952A1C7CAA6900330823 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					DD41953B1C7CAA6900330823 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = DD41952A1C7CAA6900330823;
+					};
+				};
+			};
+			buildConfigurationList = DD4195261C7CAA6900330823 /* Build configuration list for PBXProject "OpenTerminal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD4195221C7CAA6900330823;
+			productRefGroup = DD41952C1C7CAA6900330823 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD41952A1C7CAA6900330823 /* OpenTerminal */,
+				DD41953B1C7CAA6900330823 /* OpenTerminalTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD4195291C7CAA6900330823 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD4195331C7CAA6900330823 /* Assets.xcassets in Resources */,
+				DD4195361C7CAA6900330823 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD41953A1C7CAA6900330823 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD4195271C7CAA6900330823 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD4195311C7CAA6900330823 /* ViewController.swift in Sources */,
+				DD41952F1C7CAA6900330823 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD4195381C7CAA6900330823 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD4195411C7CAA6900330823 /* OpenTerminalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD41953E1C7CAA6900330823 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD41952A1C7CAA6900330823 /* OpenTerminal */;
+			targetProxy = DD41953D1C7CAA6900330823 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD4195341C7CAA6900330823 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD4195351C7CAA6900330823 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD4195431C7CAA6900330823 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD4195441C7CAA6900330823 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DD4195461C7CAA6900330823 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OpenTerminal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.qparis.OpenTerminal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DD4195471C7CAA6900330823 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OpenTerminal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.qparis.OpenTerminal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DD4195491C7CAA6900330823 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OpenTerminalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.qparis.OpenTerminalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenTerminal.app/Contents/MacOS/OpenTerminal";
+			};
+			name = Debug;
+		};
+		DD41954A1C7CAA6900330823 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OpenTerminalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.qparis.OpenTerminalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenTerminal.app/Contents/MacOS/OpenTerminal";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD4195261C7CAA6900330823 /* Build configuration list for PBXProject "OpenTerminal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD4195431C7CAA6900330823 /* Debug */,
+				DD4195441C7CAA6900330823 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD4195451C7CAA6900330823 /* Build configuration list for PBXNativeTarget "OpenTerminal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD4195461C7CAA6900330823 /* Debug */,
+				DD4195471C7CAA6900330823 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DD4195481C7CAA6900330823 /* Build configuration list for PBXNativeTarget "OpenTerminalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD4195491C7CAA6900330823 /* Debug */,
+				DD41954A1C7CAA6900330823 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD4195231C7CAA6900330823 /* Project object */;
+}
