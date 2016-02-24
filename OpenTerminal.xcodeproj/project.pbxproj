@@ -7,44 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD41952F1C7CAA6900330823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD41952E1C7CAA6900330823 /* AppDelegate.swift */; };
-		DD4195311C7CAA6900330823 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4195301C7CAA6900330823 /* ViewController.swift */; };
-		DD4195331C7CAA6900330823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4195321C7CAA6900330823 /* Assets.xcassets */; };
-		DD4195361C7CAA6900330823 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4195341C7CAA6900330823 /* Main.storyboard */; };
-		DD4195411C7CAA6900330823 /* OpenTerminalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4195401C7CAA6900330823 /* OpenTerminalTests.swift */; };
+		DD2778DC1C7CCBB4005A1529 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2778DB1C7CCBB4005A1529 /* AppDelegate.swift */; };
+		DD2778DE1C7CCBB4005A1529 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2778DD1C7CCBB4005A1529 /* ViewController.swift */; };
+		DD2778E01C7CCBB4005A1529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2778DF1C7CCBB4005A1529 /* Assets.xcassets */; };
+		DD2778E31C7CCBB4005A1529 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2778E11C7CCBB4005A1529 /* Main.storyboard */; };
+		DD27791C1C7CD144005A1529 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27791B1C7CD144005A1529 /* FinderSync.swift */; };
+		DD2779201C7CD144005A1529 /* Open Terminal Finder Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DD2779171C7CD144005A1529 /* Open Terminal Finder Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DD41953D1C7CAA6900330823 /* PBXContainerItemProxy */ = {
+		DD27791E1C7CD144005A1529 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DD4195231C7CAA6900330823 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DD41952A1C7CAA6900330823;
-			remoteInfo = OpenTerminal;
+			remoteGlobalIDString = DD2779161C7CD144005A1529;
+			remoteInfo = "Open Terminal Finder Extension";
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DD2779121C7CD0F8005A1529 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DD2779201C7CD144005A1529 /* Open Terminal Finder Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		DD41952B1C7CAA6900330823 /* OpenTerminal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenTerminal.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD41952E1C7CAA6900330823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD4195301C7CAA6900330823 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DD4195321C7CAA6900330823 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DD4195351C7CAA6900330823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DD4195371C7CAA6900330823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD41953C1C7CAA6900330823 /* OpenTerminalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenTerminalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD4195401C7CAA6900330823 /* OpenTerminalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTerminalTests.swift; sourceTree = "<group>"; };
-		DD4195421C7CAA6900330823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD2778D91C7CCBB4005A1529 /* Open Terminal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open Terminal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD2778DB1C7CCBB4005A1529 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD2778DD1C7CCBB4005A1529 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD2778DF1C7CCBB4005A1529 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD2778E21C7CCBB4005A1529 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD2778E41C7CCBB4005A1529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD2779171C7CD144005A1529 /* Open Terminal Finder Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Open Terminal Finder Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD27791A1C7CD144005A1529 /* Open_Terminal_Finder_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Open_Terminal_Finder_Extension.entitlements; sourceTree = "<group>"; };
+		DD27791B1C7CD144005A1529 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
+		DD27791D1C7CD144005A1529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD4195681C7CAB4C00330823 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DD4195281C7CAA6900330823 /* Frameworks */ = {
+		DD2778D61C7CCBB4005A1529 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD4195391C7CAA6900330823 /* Frameworks */ = {
+		DD2779141C7CD144005A1529 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -54,11 +71,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD2778DA1C7CCBB4005A1529 /* Open Terminal */ = {
+			isa = PBXGroup;
+			children = (
+				DD2778DB1C7CCBB4005A1529 /* AppDelegate.swift */,
+				DD2778DD1C7CCBB4005A1529 /* ViewController.swift */,
+				DD2778DF1C7CCBB4005A1529 /* Assets.xcassets */,
+				DD2778E11C7CCBB4005A1529 /* Main.storyboard */,
+				DD2778E41C7CCBB4005A1529 /* Info.plist */,
+			);
+			path = "Open Terminal";
+			sourceTree = "<group>";
+		};
+		DD2779181C7CD144005A1529 /* Open Terminal Finder Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DD27791B1C7CD144005A1529 /* FinderSync.swift */,
+				DD27791D1C7CD144005A1529 /* Info.plist */,
+				DD2779191C7CD144005A1529 /* Supporting Files */,
+			);
+			path = "Open Terminal Finder Extension";
+			sourceTree = "<group>";
+		};
+		DD2779191C7CD144005A1529 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD27791A1C7CD144005A1529 /* Open_Terminal_Finder_Extension.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		DD4195221C7CAA6900330823 = {
 			isa = PBXGroup;
 			children = (
-				DD41952D1C7CAA6900330823 /* OpenTerminal */,
-				DD41953F1C7CAA6900330823 /* OpenTerminalTests */,
+				DD2778DA1C7CCBB4005A1529 /* Open Terminal */,
+				DD2779181C7CD144005A1529 /* Open Terminal Finder Extension */,
+				DD4195671C7CAB4C00330823 /* Frameworks */,
 				DD41952C1C7CAA6900330823 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,70 +114,58 @@
 		DD41952C1C7CAA6900330823 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DD41952B1C7CAA6900330823 /* OpenTerminal.app */,
-				DD41953C1C7CAA6900330823 /* OpenTerminalTests.xctest */,
+				DD2778D91C7CCBB4005A1529 /* Open Terminal.app */,
+				DD2779171C7CD144005A1529 /* Open Terminal Finder Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DD41952D1C7CAA6900330823 /* OpenTerminal */ = {
+		DD4195671C7CAB4C00330823 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DD41952E1C7CAA6900330823 /* AppDelegate.swift */,
-				DD4195301C7CAA6900330823 /* ViewController.swift */,
-				DD4195321C7CAA6900330823 /* Assets.xcassets */,
-				DD4195341C7CAA6900330823 /* Main.storyboard */,
-				DD4195371C7CAA6900330823 /* Info.plist */,
+				DD4195681C7CAB4C00330823 /* Cocoa.framework */,
 			);
-			path = OpenTerminal;
-			sourceTree = "<group>";
-		};
-		DD41953F1C7CAA6900330823 /* OpenTerminalTests */ = {
-			isa = PBXGroup;
-			children = (
-				DD4195401C7CAA6900330823 /* OpenTerminalTests.swift */,
-				DD4195421C7CAA6900330823 /* Info.plist */,
-			);
-			path = OpenTerminalTests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DD41952A1C7CAA6900330823 /* OpenTerminal */ = {
+		DD2778D81C7CCBB4005A1529 /* Open Terminal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DD4195451C7CAA6900330823 /* Build configuration list for PBXNativeTarget "OpenTerminal" */;
+			buildConfigurationList = DD2778F01C7CCBB4005A1529 /* Build configuration list for PBXNativeTarget "Open Terminal" */;
 			buildPhases = (
-				DD4195271C7CAA6900330823 /* Sources */,
-				DD4195281C7CAA6900330823 /* Frameworks */,
-				DD4195291C7CAA6900330823 /* Resources */,
+				DD2778D51C7CCBB4005A1529 /* Sources */,
+				DD2778D61C7CCBB4005A1529 /* Frameworks */,
+				DD2778D71C7CCBB4005A1529 /* Resources */,
+				DD2779121C7CD0F8005A1529 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DD27791F1C7CD144005A1529 /* PBXTargetDependency */,
 			);
-			name = OpenTerminal;
-			productName = OpenTerminal;
-			productReference = DD41952B1C7CAA6900330823 /* OpenTerminal.app */;
+			name = "Open Terminal";
+			productName = "Open Terminal";
+			productReference = DD2778D91C7CCBB4005A1529 /* Open Terminal.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DD41953B1C7CAA6900330823 /* OpenTerminalTests */ = {
+		DD2779161C7CD144005A1529 /* Open Terminal Finder Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DD4195481C7CAA6900330823 /* Build configuration list for PBXNativeTarget "OpenTerminalTests" */;
+			buildConfigurationList = DD2779211C7CD144005A1529 /* Build configuration list for PBXNativeTarget "Open Terminal Finder Extension" */;
 			buildPhases = (
-				DD4195381C7CAA6900330823 /* Sources */,
-				DD4195391C7CAA6900330823 /* Frameworks */,
-				DD41953A1C7CAA6900330823 /* Resources */,
+				DD2779131C7CD144005A1529 /* Sources */,
+				DD2779141C7CD144005A1529 /* Frameworks */,
+				DD2779151C7CD144005A1529 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DD41953E1C7CAA6900330823 /* PBXTargetDependency */,
 			);
-			name = OpenTerminalTests;
-			productName = OpenTerminalTests;
-			productReference = DD41953C1C7CAA6900330823 /* OpenTerminalTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = "Open Terminal Finder Extension";
+			productName = "Open Terminal Finder Extension";
+			productReference = DD2779171C7CD144005A1529 /* Open Terminal Finder Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -141,12 +177,18 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = QP;
 				TargetAttributes = {
-					DD41952A1C7CAA6900330823 = {
+					DD2778D81C7CCBB4005A1529 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = MK2RQZD575;
 					};
-					DD41953B1C7CAA6900330823 = {
+					DD2779161C7CD144005A1529 = {
 						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = DD41952A1C7CAA6900330823;
+						DevelopmentTeam = MK2RQZD575;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -163,23 +205,23 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DD41952A1C7CAA6900330823 /* OpenTerminal */,
-				DD41953B1C7CAA6900330823 /* OpenTerminalTests */,
+				DD2778D81C7CCBB4005A1529 /* Open Terminal */,
+				DD2779161C7CD144005A1529 /* Open Terminal Finder Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DD4195291C7CAA6900330823 /* Resources */ = {
+		DD2778D71C7CCBB4005A1529 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD4195331C7CAA6900330823 /* Assets.xcassets in Resources */,
-				DD4195361C7CAA6900330823 /* Main.storyboard in Resources */,
+				DD2778E01C7CCBB4005A1529 /* Assets.xcassets in Resources */,
+				DD2778E31C7CCBB4005A1529 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD41953A1C7CAA6900330823 /* Resources */ = {
+		DD2779151C7CD144005A1529 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -189,38 +231,38 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DD4195271C7CAA6900330823 /* Sources */ = {
+		DD2778D51C7CCBB4005A1529 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD4195311C7CAA6900330823 /* ViewController.swift in Sources */,
-				DD41952F1C7CAA6900330823 /* AppDelegate.swift in Sources */,
+				DD2778DE1C7CCBB4005A1529 /* ViewController.swift in Sources */,
+				DD2778DC1C7CCBB4005A1529 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD4195381C7CAA6900330823 /* Sources */ = {
+		DD2779131C7CD144005A1529 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD4195411C7CAA6900330823 /* OpenTerminalTests.swift in Sources */,
+				DD27791C1C7CD144005A1529 /* FinderSync.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DD41953E1C7CAA6900330823 /* PBXTargetDependency */ = {
+		DD27791F1C7CD144005A1529 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DD41952A1C7CAA6900330823 /* OpenTerminal */;
-			targetProxy = DD41953D1C7CAA6900330823 /* PBXContainerItemProxy */;
+			target = DD2779161C7CD144005A1529 /* Open Terminal Finder Extension */;
+			targetProxy = DD27791E1C7CD144005A1529 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DD4195341C7CAA6900330823 /* Main.storyboard */ = {
+		DD2778E11C7CCBB4005A1529 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DD4195351C7CAA6900330823 /* Base */,
+				DD2778E21C7CCBB4005A1529 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -228,6 +270,68 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DD2778F11C7CCBB4005A1529 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Quentin Paris";
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "Open Terminal/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.qparis.openterminal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "542cc9b9-2d2c-4d1e-bccc-376157f2ebc4";
+			};
+			name = Debug;
+		};
+		DD2778F21C7CCBB4005A1529 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Quentin Paris";
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "Open Terminal/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.qparis.openterminal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "542cc9b9-2d2c-4d1e-bccc-376157f2ebc4";
+			};
+			name = Release;
+		};
+		DD2779221C7CD144005A1529 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Open Terminal Finder Extension/Open_Terminal_Finder_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Developer ID Application: Quentin Paris";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application: Quentin Paris";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Open Terminal Finder Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.qparis.openterminal.Open-Terminal-Finder-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "542cc9b9-2d2c-4d1e-bccc-376157f2ebc4";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DD2779231C7CD144005A1529 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Open Terminal Finder Extension/Open_Terminal_Finder_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Developer ID Application: Quentin Paris";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application: Quentin Paris";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Open Terminal Finder Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.qparis.openterminal.Open-Terminal-Finder-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "542cc9b9-2d2c-4d1e-bccc-376157f2ebc4";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		DD4195431C7CAA6900330823 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -245,7 +349,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Developer ID Application: Quentin Paris";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -267,6 +371,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "542cc9b9-2d2c-4d1e-bccc-376157f2ebc4";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -289,7 +394,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Developer ID Application: Quentin Paris";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -304,63 +409,32 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "542cc9b9-2d2c-4d1e-bccc-376157f2ebc4";
 				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		DD4195461C7CAA6900330823 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = OpenTerminal/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fr.qparis.OpenTerminal;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		DD4195471C7CAA6900330823 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = OpenTerminal/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fr.qparis.OpenTerminal;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		DD4195491C7CAA6900330823 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = OpenTerminalTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fr.qparis.OpenTerminalTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenTerminal.app/Contents/MacOS/OpenTerminal";
-			};
-			name = Debug;
-		};
-		DD41954A1C7CAA6900330823 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = OpenTerminalTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fr.qparis.OpenTerminalTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenTerminal.app/Contents/MacOS/OpenTerminal";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DD2778F01C7CCBB4005A1529 /* Build configuration list for PBXNativeTarget "Open Terminal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD2778F11C7CCBB4005A1529 /* Debug */,
+				DD2778F21C7CCBB4005A1529 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD2779211C7CD144005A1529 /* Build configuration list for PBXNativeTarget "Open Terminal Finder Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD2779221C7CD144005A1529 /* Debug */,
+				DD2779231C7CD144005A1529 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DD4195261C7CAA6900330823 /* Build configuration list for PBXProject "OpenTerminal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -369,22 +443,6 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		};
-		DD4195451C7CAA6900330823 /* Build configuration list for PBXNativeTarget "OpenTerminal" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DD4195461C7CAA6900330823 /* Debug */,
-				DD4195471C7CAA6900330823 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		DD4195481C7CAA6900330823 /* Build configuration list for PBXNativeTarget "OpenTerminalTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DD4195491C7CAA6900330823 /* Debug */,
-				DD41954A1C7CAA6900330823 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

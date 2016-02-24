@@ -4,20 +4,60 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>OpenTerminal.xcscheme</key>
+		<key>Open Terminal Finder Extension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>3</integer>
+		</dict>
+		<key>Open Terminal.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>DD2778BD1C7CB765005A1529</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DD2778D81C7CCBB4005A1529</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DD2778E81C7CCBB4005A1529</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DD2779001C7CD0D3005A1529</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DD2779161C7CD144005A1529</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DD41952A1C7CAA6900330823</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>DD41953B1C7CAA6900330823</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DD41954E1C7CAAAD00330823</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DD4195651C7CAB4C00330823</key>
 		<dict>
 			<key>primary</key>
 			<true/>
