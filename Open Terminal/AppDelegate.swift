@@ -28,7 +28,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 if(NSFileManager.defaultManager().fileExistsAtPath(unwrappedPath)) {
 
                     do {
-                        try ("cd \""+unwrappedPath+"\" && exec bash -c \"clear;printf '\\e[3J';bash --rcfile ~/.profile\"").writeToFile("/tmp/openTerminal", atomically: true, encoding: NSUTF8StringEncoding)
+                        let rcContent = "cd \""+unwrappedPath+"\" \n" +
+                            "[ -e \"$HOME/.profile\" ] && rcFile=\"~/.profile\" || rcFile=\"/etc/profile\"\n" +
+                            "exec bash -c \"clear;printf '\\e[3J';bash --rcfile $rcFile\""
+                        
+                        try (rcContent).writeToFile("/tmp/openTerminal", atomically: true, encoding: NSUTF8StringEncoding)
                         try NSFileManager.defaultManager().setAttributes([NSFilePosixPermissions: 0o777], ofItemAtPath: "/tmp/openTerminal")
                             system("open -b com.apple.terminal /tmp/openTerminal")
                     } catch _ {}
