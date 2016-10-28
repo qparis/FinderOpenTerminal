@@ -13,11 +13,12 @@ import Darwin
 class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationWillFinishLaunching(aNotification: NSNotification) {
         let appleEventManager:NSAppleEventManager = NSAppleEventManager.sharedAppleEventManager()
-        appleEventManager.setEventHandler(self, andSelector: "handleGetURLEvent:replyEvent:", forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
+        appleEventManager.setEventHandler(self, andSelector: #selector(AppDelegate.handleGetURLEvent(_:replyEvent:)), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
     }
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        system("pluginkit -e use -i fr.qparis.openterminal.Open-Terminal-Finder-Extension ; killall Finder")
+        SwiftySystem.execute("/usr/bin/pluginkit", arguments: ["pluginkit", "-e", "use", "-i", "fr.qparis.openterminal.Open-Terminal-Finder-Extension"])
+        SwiftySystem.execute("/usr/bin/killall",arguments: ["Finder"])
         helpMe()
         exit(0)
     }
@@ -34,7 +35,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                         
                         try (rcContent).writeToFile("/tmp/openTerminal", atomically: true, encoding: NSUTF8StringEncoding)
                         try NSFileManager.defaultManager().setAttributes([NSFilePosixPermissions: 0o777], ofItemAtPath: "/tmp/openTerminal")
-                            system("open -b com.apple.terminal /tmp/openTerminal")
+                            SwiftySystem.execute("/usr/bin/open", arguments: ["-b", "com.apple.terminal", "/tmp/openTerminal"])
                     } catch _ {}
                     
                 } else {

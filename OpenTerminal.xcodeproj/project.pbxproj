@@ -13,6 +13,7 @@
 		DD2778E31C7CCBB4005A1529 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2778E11C7CCBB4005A1529 /* Main.storyboard */; };
 		DD27791C1C7CD144005A1529 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27791B1C7CD144005A1529 /* FinderSync.swift */; };
 		DD2779201C7CD144005A1529 /* Open Terminal Finder Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DD2779171C7CD144005A1529 /* Open Terminal Finder Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EDC39F861DC3FC09008978D0 /* SwiftySystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC39F851DC3FC09008978D0 /* SwiftySystem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		DD27791B1C7CD144005A1529 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
 		DD27791D1C7CD144005A1529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD4195681C7CAB4C00330823 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		EDC39F851DC3FC09008978D0 /* SwiftySystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftySystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				DD2778DF1C7CCBB4005A1529 /* Assets.xcassets */,
 				DD2778E11C7CCBB4005A1529 /* Main.storyboard */,
 				DD2778E41C7CCBB4005A1529 /* Info.plist */,
+				EDC39F851DC3FC09008978D0 /* SwiftySystem.swift */,
 			);
 			path = "Open Terminal";
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC39F861DC3FC09008978D0 /* SwiftySystem.swift in Sources */,
 				DD2778DE1C7CCBB4005A1529 /* ViewController.swift in Sources */,
 				DD2778DC1C7CCBB4005A1529 /* AppDelegate.swift in Sources */,
 			);
@@ -282,6 +286,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = fr.qparis.openterminal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "542cc9b9-2d2c-4d1e-bccc-376157f2ebc4";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -297,6 +302,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = fr.qparis.openterminal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "542cc9b9-2d2c-4d1e-bccc-376157f2ebc4";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -313,6 +319,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "542cc9b9-2d2c-4d1e-bccc-376157f2ebc4";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -329,6 +336,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "542cc9b9-2d2c-4d1e-bccc-376157f2ebc4";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
