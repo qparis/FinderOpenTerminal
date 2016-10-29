@@ -25,9 +25,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func handleGetURLEvent(event: NSAppleEventDescriptor?, replyEvent: NSAppleEventDescriptor?) {
         if let url = NSURL(string: event!.paramDescriptorForKeyword(AEKeyword(keyDirectObject))!.stringValue!) {
+            
             if let unwrappedPath = url.path {
                 if(NSFileManager.defaultManager().fileExistsAtPath(unwrappedPath)) {
-
                     do {
                         let rcContent = "cd \""+unwrappedPath+"\" \n" +
                             "[ -e \"$HOME/.profile\" ] && rcFile=\"~/.profile\" || rcFile=\"/etc/profile\"\n" +
