@@ -27,16 +27,17 @@ class FinderSync: FIFinderSync {
     override func menuForMenuKind(menuKind: FIMenuKind) -> NSMenu {
         // Produce a menu for the extension.
         let menu = NSMenu(title: "Open Terminal")
-        menu.addItemWithTitle("Open Terminal", action: "openTerminal:", keyEquivalent: "")
+        menu.addItemWithTitle("Open Terminal", action: #selector(FinderSync.openTerminal(_:)), keyEquivalent: "")
         return menu
     }
     
     @IBAction func openTerminal(sender: AnyObject?) {
         let target = FIFinderSyncController.defaultController().targetedURL()
         
-        if let targetPath = target?.path {
-            system("open \"terminal://"+targetPath+"\"")
+        guard let targetPath = target?.path, let url = NSURL(string:"terminal://"+targetPath) else {
+            return
         }
+        NSWorkspace.sharedWorkspace().openURL(url)
     }
     
 }
