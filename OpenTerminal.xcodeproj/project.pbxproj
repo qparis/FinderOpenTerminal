@@ -12,6 +12,7 @@
 		DD27791C1C7CD144005A1529 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27791B1C7CD144005A1529 /* FinderSync.swift */; };
 		DD2779201C7CD144005A1529 /* Open Terminal Finder Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DD2779171C7CD144005A1529 /* Open Terminal Finder Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DD2801FF212725B600C7F995 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2801FE212725B600C7F995 /* main.swift */; };
+		DD28020621275B2500C7F995 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD28020821275B2500C7F995 /* Localizable.strings */; };
 		EDC39F861DC3FC09008978D0 /* SwiftySystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC39F851DC3FC09008978D0 /* SwiftySystem.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,8 @@
 		DD27791B1C7CD144005A1529 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
 		DD27791D1C7CD144005A1529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD2801FE212725B600C7F995 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DD28020721275B2500C7F995 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DD28020921275B3300C7F995 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DD4195681C7CAB4C00330823 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		EDC39F851DC3FC09008978D0 /* SwiftySystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftySystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				DD27791A1C7CD144005A1529 /* Open_Terminal_Finder_Extension.entitlements */,
+				DD28020821275B2500C7F995 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -155,8 +159,8 @@
 			buildConfigurationList = DD2779211C7CD144005A1529 /* Build configuration list for PBXNativeTarget "Open Terminal Finder Extension" */;
 			buildPhases = (
 				DD2779131C7CD144005A1529 /* Sources */,
-				DD2779141C7CD144005A1529 /* Frameworks */,
 				DD2779151C7CD144005A1529 /* Resources */,
+				DD2779141C7CD144005A1529 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,6 +201,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = DD4195221C7CAA6900330823;
 			productRefGroup = DD41952C1C7CAA6900330823 /* Products */;
@@ -222,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD28020621275B2500C7F995 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +261,18 @@
 			targetProxy = DD27791E1C7CD144005A1529 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD28020821275B2500C7F995 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD28020721275B2500C7F995 /* en */,
+				DD28020921275B3300C7F995 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DD2778F11C7CCBB4005A1529 /* Debug */ = {
@@ -349,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -404,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;

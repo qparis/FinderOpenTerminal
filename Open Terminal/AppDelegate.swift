@@ -3,7 +3,7 @@
 //  Open Terminal
 //
 //  Created by Quentin PÂRIS on 23/02/2016.
-//  Copyright © 2016 QP. All rights reserved.
+//  Copyright © 2018 Quentin PÂRIS. All rights reserved.
 //
 
 import Cocoa
@@ -49,20 +49,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     private func helpMe(customMessage: String) {
-        let alert = NSAlert ()
+        let alert = NSAlert()
         alert.messageText = "Information"
         alert.informativeText = customMessage
         alert.runModal()
     }
     
     private func helpMe() {
-        helpMe(customMessage: "This application adds a Open Terminal item in every Finder context menus.\n\n(c) Quentin PÂRIS 2016 - http://quentin.paris")
+        helpMe(customMessage: "This application adds a \"Open a terminal\" item in every Finder context menus.\n\n(c) Quentin PÂRIS 2018 - http://quentin.paris")
     }
-
-    func applicationWillTerminate(aNotification: NSNotification) {
-        // Insert code here to tear down your application
-    }
-
-
 }
 
