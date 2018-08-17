@@ -3,16 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		DD2778DC1C7CCBB4005A1529 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2778DB1C7CCBB4005A1529 /* AppDelegate.swift */; };
-		DD2778DE1C7CCBB4005A1529 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2778DD1C7CCBB4005A1529 /* ViewController.swift */; };
 		DD2778E01C7CCBB4005A1529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2778DF1C7CCBB4005A1529 /* Assets.xcassets */; };
-		DD2778E31C7CCBB4005A1529 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2778E11C7CCBB4005A1529 /* Main.storyboard */; };
 		DD27791C1C7CD144005A1529 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27791B1C7CD144005A1529 /* FinderSync.swift */; };
 		DD2779201C7CD144005A1529 /* Open Terminal Finder Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DD2779171C7CD144005A1529 /* Open Terminal Finder Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DD2801FF212725B600C7F995 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2801FE212725B600C7F995 /* main.swift */; };
 		EDC39F861DC3FC09008978D0 /* SwiftySystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC39F851DC3FC09008978D0 /* SwiftySystem.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,14 +42,13 @@
 /* Begin PBXFileReference section */
 		DD2778D91C7CCBB4005A1529 /* Open Terminal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open Terminal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2778DB1C7CCBB4005A1529 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD2778DD1C7CCBB4005A1529 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD2778DF1C7CCBB4005A1529 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DD2778E21C7CCBB4005A1529 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD2778E41C7CCBB4005A1529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD2779171C7CD144005A1529 /* Open Terminal Finder Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Open Terminal Finder Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD27791A1C7CD144005A1529 /* Open_Terminal_Finder_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Open_Terminal_Finder_Extension.entitlements; sourceTree = "<group>"; };
 		DD27791B1C7CD144005A1529 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
 		DD27791D1C7CD144005A1529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD2801FE212725B600C7F995 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DD4195681C7CAB4C00330823 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		EDC39F851DC3FC09008978D0 /* SwiftySystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftySystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,11 +75,10 @@
 			isa = PBXGroup;
 			children = (
 				DD2778DB1C7CCBB4005A1529 /* AppDelegate.swift */,
-				DD2778DD1C7CCBB4005A1529 /* ViewController.swift */,
 				DD2778DF1C7CCBB4005A1529 /* Assets.xcassets */,
-				DD2778E11C7CCBB4005A1529 /* Main.storyboard */,
 				DD2778E41C7CCBB4005A1529 /* Info.plist */,
 				EDC39F851DC3FC09008978D0 /* SwiftySystem.swift */,
+				DD2801FE212725B600C7F995 /* main.swift */,
 			);
 			path = "Open Terminal";
 			sourceTree = "<group>";
@@ -177,16 +174,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = QP;
 				TargetAttributes = {
 					DD2778D81C7CCBB4005A1529 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = MK2RQZD575;
 					};
 					DD2779161C7CD144005A1529 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = MK2RQZD575;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
 								enabled = 1;
@@ -196,7 +191,7 @@
 				};
 			};
 			buildConfigurationList = DD4195261C7CAA6900330823 /* Build configuration list for PBXProject "OpenTerminal" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -220,7 +215,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD2778E01C7CCBB4005A1529 /* Assets.xcassets in Resources */,
-				DD2778E31C7CCBB4005A1529 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,8 +233,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDC39F861DC3FC09008978D0 /* SwiftySystem.swift in Sources */,
-				DD2778DE1C7CCBB4005A1529 /* ViewController.swift in Sources */,
 				DD2778DC1C7CCBB4005A1529 /* AppDelegate.swift in Sources */,
+				DD2801FF212725B600C7F995 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,47 +256,46 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		DD2778E11C7CCBB4005A1529 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD2778E21C7CCBB4005A1529 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		DD2778F11C7CCBB4005A1529 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Developer ID Application: Quentin Paris";
 				COMBINE_HIDPI_IMAGES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				DEVELOPMENT_TEAM = MK2RQZD575;
 				INFOPLIST_FILE = "Open Terminal/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = fr.qparis.openterminal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "542cc9b9-2d2c-4d1e-bccc-376157f2ebc4";
-				SWIFT_VERSION = 2.3;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		DD2778F21C7CCBB4005A1529 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Developer ID Application: Quentin Paris";
 				COMBINE_HIDPI_IMAGES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				DEVELOPMENT_TEAM = MK2RQZD575;
 				INFOPLIST_FILE = "Open Terminal/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = fr.qparis.openterminal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "542cc9b9-2d2c-4d1e-bccc-376157f2ebc4";
-				SWIFT_VERSION = 2.3;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -313,13 +306,19 @@
 				CODE_SIGN_IDENTITY = "Developer ID Application: Quentin Paris";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application: Quentin Paris";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MK2RQZD575;
 				INFOPLIST_FILE = "Open Terminal Finder Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.qparis.openterminal.Open-Terminal-Finder-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "542cc9b9-2d2c-4d1e-bccc-376157f2ebc4";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -330,13 +329,19 @@
 				CODE_SIGN_IDENTITY = "Developer ID Application: Quentin Paris";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application: Quentin Paris";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MK2RQZD575;
 				INFOPLIST_FILE = "Open Terminal Finder Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.qparis.openterminal.Open-Terminal-Finder-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "542cc9b9-2d2c-4d1e-bccc-376157f2ebc4";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -348,13 +353,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Developer ID Application: Quentin Paris";
@@ -393,13 +408,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Developer ID Application: Quentin Paris";
@@ -419,6 +444,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "542cc9b9-2d2c-4d1e-bccc-376157f2ebc4";
 				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
 		};

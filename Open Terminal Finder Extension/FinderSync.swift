@@ -11,33 +11,33 @@ import FinderSync
 
 class FinderSync: FIFinderSync {
     
-    var myFolderURL: NSURL = NSURL(fileURLWithPath: "/")
+    var myFolderURL: URL = URL(fileURLWithPath: "/")
     
     override init() {
         super.init()
         
-        NSLog("FinderSync() launched from %@", NSBundle.mainBundle().bundlePath)
+        NSLog("FinderSync() launched from %@", Bundle.main.bundlePath)
         
         // Set up the directory we are syncing.
-        FIFinderSyncController.defaultController().directoryURLs = [self.myFolderURL]
+        var directoryUrls = Set<URL>();
+        directoryUrls.insert(self.myFolderURL);
+        FIFinderSyncController.default().directoryURLs = directoryUrls;
     }
     
-    
-    
-    override func menuForMenuKind(menuKind: FIMenuKind) -> NSMenu {
+    override func menu(for menu: FIMenuKind) -> NSMenu? {
         // Produce a menu for the extension.
         let menu = NSMenu(title: "Open Terminal")
-        menu.addItemWithTitle("Open Terminal", action: #selector(FinderSync.openTerminal(_:)), keyEquivalent: "")
+        menu.addItem(withTitle: "Open Terminal", action: #selector(FinderSync.openTerminal(sender:)), keyEquivalent: "")
         return menu
     }
     
     @IBAction func openTerminal(sender: AnyObject?) {
-        let target = FIFinderSyncController.defaultController().targetedURL()
+        let target = FIFinderSyncController.default().targetedURL()
         
-        guard let targetPath = target?.path?.stringByReplacingOccurrencesOfString(" ", withString: "%20"), let url = NSURL(string:"terminal://"+targetPath) else {
+        guard let targetPath = target?.path.replacingOccurrences(of: " ", with: "%20"), let url = URL(string:"terminal://"+targetPath) else {
             return
         }
-        NSWorkspace.sharedWorkspace().openURL(url)
+        NSWorkspace.shared.open(url)
     }
     
 }
