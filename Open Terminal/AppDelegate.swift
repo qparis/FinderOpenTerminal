@@ -9,12 +9,7 @@
 import Cocoa
 import Darwin
 
-class AppDelegate: NSObject, NSApplicationDelegate {
-    func applicationWillFinishLaunching(aNotification: NSNotification) {
-        let appleEventManager:NSAppleEventManager = NSAppleEventManager.shared()
-        appleEventManager.setEventHandler(self, andSelector: #selector(AppDelegate.handleGetURLEvent(event:replyEvent:)), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
-    }
-    
+class AppDelegate: NSObject, NSApplicationDelegate {    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         NSLog("Installing Finder extension")
         SwiftySystem.execute(path: "/usr/bin/pluginkit", arguments: ["pluginkit", "-e", "use", "-i", "fr.qparis.openterminal.Open-Terminal-Finder-Extension"])
@@ -23,30 +18,27 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         exit(0)
     }
     
-    @objc func handleGetURLEvent(event: NSAppleEventDescriptor?, replyEvent: NSAppleEventDescriptor?) {
-        if let url = NSURL(string: event!.paramDescriptor(forKeyword: AEKeyword(keyDirectObject))!.stringValue!) {
-            
-            if let unwrappedPath = url.path {
-                if(FileManager.default.fileExists(atPath: unwrappedPath)) {
-                    do {
-                        let rcContent = "cd \""+unwrappedPath+"\" \n" +
-                            "[ -e \"$HOME/.profile\" ] && rcFile=\"~/.profile\" || rcFile=\"/etc/profile\"\n" +
-                            "exec bash -c \"clear;printf '\\e[3J';bash --rcfile $rcFile\""
-                        
-                        try (rcContent).write(toFile: "/tmp/openTerminal", atomically: true, encoding: String.Encoding.utf8)
-                        try FileManager.default.setAttributes([FileAttributeKey.posixPermissions: 0o777], ofItemAtPath: "/tmp/openTerminal")
-                        SwiftySystem.execute(path: "/usr/bin/open", arguments: ["-b", "com.apple.terminal", "/tmp/openTerminal"])
-                    } catch _ {}
+    public func application(_ application: NSApplication, open urls: [URL]) {
+        if let unwrappedPath = urls.first?.absoluteURL.path {
+            if(FileManager.default.fileExists(atPath: unwrappedPath)) {
+                do {
+                    let rcContent = "cd \""+unwrappedPath+"\" \n" +
+                        "[ -e \"$HOME/.profile\" ] && rcFile=\"~/.profile\" || rcFile=\"/etc/profile\"\n" +
+                    "exec bash -c \"clear;printf '\\e[3J';bash --rcfile $rcFile\""
                     
-                } else {
-                    helpMe(customMessage: "The specified directory does not exist")
-                }
+                    try (rcContent).write(toFile: "/tmp/openTerminal", atomically: true, encoding: String.Encoding.utf8)
+                    try FileManager.default.setAttributes([FileAttributeKey.posixPermissions: 0o777], ofItemAtPath: "/tmp/openTerminal")
+                    SwiftySystem.execute(path: "/usr/bin/open", arguments: ["-b", "com.apple.terminal", unwrappedPath])
+                } catch _ {}
                 
+            } else {
+                helpMe(customMessage: "The specified directory does not exist")
             }
         }
         
-        exit(0)
+        exit(0);
     }
+
     
     private func helpMe(customMessage: String) {
         let alert = NSAlert()
