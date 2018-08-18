@@ -9,7 +9,7 @@
 import Cocoa
 import Darwin
 
-class AppDelegate: NSObject, NSApplicationDelegate {    
+class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         NSLog("Installing Finder extension")
         SwiftySystem.execute(path: "/usr/bin/pluginkit", arguments: ["pluginkit", "-e", "use", "-i", "fr.qparis.openterminal.Open-Terminal-Finder-Extension"])
@@ -22,12 +22,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if let unwrappedPath = urls.first?.absoluteURL.path {
             if(FileManager.default.fileExists(atPath: unwrappedPath)) {
                 do {
-                    let rcContent = "cd \""+unwrappedPath+"\" \n" +
-                        "[ -e \"$HOME/.profile\" ] && rcFile=\"~/.profile\" || rcFile=\"/etc/profile\"\n" +
-                    "exec bash -c \"clear;printf '\\e[3J';bash --rcfile $rcFile\""
-                    
-                    try (rcContent).write(toFile: "/tmp/openTerminal", atomically: true, encoding: String.Encoding.utf8)
-                    try FileManager.default.setAttributes([FileAttributeKey.posixPermissions: 0o777], ofItemAtPath: "/tmp/openTerminal")
                     SwiftySystem.execute(path: "/usr/bin/open", arguments: ["-b", "com.apple.terminal", unwrappedPath])
                 } catch _ {}
                 
