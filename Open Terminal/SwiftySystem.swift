@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct SwiftySystem {
+class SwiftySystem {
     static func execute(path: String?, arguments: [String]?) {
         let pipe = Pipe()
         

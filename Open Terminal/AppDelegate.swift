@@ -12,7 +12,7 @@ import Darwin
 class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         NSLog("Installing Finder extension")
-        SwiftySystem.execute(path: "/usr/bin/pluginkit", arguments: ["pluginkit", "-e", "use", "-i", "fr.qparis.openterminal.Open-Terminal-Finder-Extension"])
+        SwiftySystem.execute(path: "/usr/bin/pluginkit", arguments: ["-e", "use", "-i", "fr.qparis.openterminal.Open-Terminal-Finder-Extension"])
         SwiftySystem.execute(path: "/usr/bin/killall",arguments: ["Finder"])
         helpMe()
         exit(0)
