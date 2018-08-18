@@ -21,10 +21,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     public func application(_ application: NSApplication, open urls: [URL]) {
         if let unwrappedPath = urls.first?.absoluteURL.path {
             if(FileManager.default.fileExists(atPath: unwrappedPath)) {
-                do {
-                    SwiftySystem.execute(path: "/usr/bin/open", arguments: ["-b", "com.apple.terminal", unwrappedPath])
-                } catch _ {}
-                
+                SwiftySystem.execute(path: "/usr/bin/open", arguments: ["-b", "com.apple.terminal", unwrappedPath])
             } else {
                 helpMe(customMessage: "The specified directory does not exist")
             }
