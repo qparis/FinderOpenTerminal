@@ -7,3 +7,5 @@
 */
 "Open a terminal" = "Ouvrir un terminal";
 "This application adds a \"Open a terminal\" item in every Finder context menus." = "Cette application ajoute une entrée  \"Ouvrir un terminal\" dans chaque menu contextuel de Finder.";
+"Information" = "Informations";
+"The specified directory does not exist" = "Le répertoire spécifié n'existe pas";
