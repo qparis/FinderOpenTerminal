@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  OpenTerminal
+
+  Created by Matteo Seclì on 08/11/2020.
+  Copyright © 2020 QP. All rights reserved.
+*/
+"Open a terminal" = "Apri un terminale";
+"This application adds a \"Open a terminal\" item in every Finder context menus." = "Questa applicazione aggiunge una voce \"Apri un terminale\" in ogni menu contestuale del Finder.";
+"Information" = "Informazioni";
+"The specified directory does not exist" = "La directory specificata non esiste";
